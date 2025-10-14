@@ -1,0 +1,60 @@
+int main()
+{ //============== Declaration ==================
+int a = 4;
+int b = 6;
+int c = 12;
+double dis = 0;
+//===================== Input ===================
+
+cout << "Please input 3 coefficeit of qadratic equation " << endl;
+cin >> a >> b >> c;;
+
+//================ Process =================
+dis = b*b - 4*a*c;
+cout << "Discremionant is " << dis << endl;
+
+if (dis > 0)
+cout << "You have two real solution" << endl;
+else if (dis == 0)
+cout << "You have one real solution " << endl;
+else
+cout << "You do npt have real solution but two imaginary solution " << endl;
+return 0;
+}
+
+//===================== Program 2 ======================
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ //============== Declaration ==================
+int num1=0;
+int num2=0;
+int num3=0;
+double average = 0.0 ;
+//===================== Input ===================
+
+cout << "Please input 1st number" << endl;
+cin >> num1;
+cout << "Please input 2nd number" << endl;
+cin >> num2;
+cout << "Please input 3rd number" << endl;
+cin >> num3;
+//================ Process =================
+average = (num1 + num2 + num3) / 3.0;
+cout<<"Your course average is" << average <<endl;
+
+if (average >= 90)
+cout << "Your course letter grade is A " << endl;
+else if (average >= 80)
+cout << "Your course letter grade is B " << endl;
+else if (average >= 70)
+cout << "Your course letter grade is C " << endl;
+else if (average >= 60)
+cout << "Your course letter grade is D " << endl;
+else
+cout << "Your course letter grade is F " << endl;
+return 0;
+}
